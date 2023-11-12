@@ -1,2 +1,21 @@
-# Dudebot
-An interaction bot.
+# Dude Interaction bot
+A simple bot that will help you to come out from Loneliness and make it more fun.  
+
+## Syntax
+```
+bot.py
+```
+
+## Stages
+**Stage #1: Dude Bot welcomes you**   
+Teach your assistant to introduce itself in the console.
+
+**Stage #2: Print your name**   
+Introduce yourself to the bot.
+
+**Stage #3: Guess the age**   
+Use your knowledge of strings and numbers to make the assistant guess your age. 
+
+**Stage #4: Learning numbers**   
+Your assistant is old enough to learn how to count. And you are experienced enough to apply a for loop at this stage! 
+
