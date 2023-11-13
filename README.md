@@ -1,5 +1,5 @@
 # Dude Interaction bot
-A simple bot that will help you to come out from Loneliness and make it more fun.  
+A simple bot that will help you to calculate Age, Arithmethic problems and make it more fun.  
 
 ## Syntax
 ```
