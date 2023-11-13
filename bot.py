@@ -9,14 +9,12 @@ def remind_name():
     print("What a great name you have, {0}!".format(name))
 
 
-def guess_age():
-    print('Let me guess your age.')
-    print('Enter remainders of dividing your age by 3, 5 and 7.')
-
-    rem3 = int(input())
-    rem5 = int(input())
-    rem7 = int(input())
-    age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
+def guess_age(y, m, d):
+    import datetime
+    today = datetime.datetime.now().date()
+    dob = datetime.date(y, m, d)
+    age = int((today-dob).days / 365.25)
+    print(age)
 
     print("Your age is {0}; that's a good time to start programming!".format(age))
 
@@ -29,7 +27,24 @@ def count():
     while counter <= num:
         print("{0} !".format(counter))
         counter += 1
-
+def calculate(a,b):
+    result =0 
+    print("Press 1 for Addittion \nPress 2 for Subtraction \nPress 3 for Multiplication \nPress 4 for Division")
+    option = int(input("Enter your option: "))
+    if option == 1:
+        result = a+b
+        print("Addition : ", result)
+    elif option == 2:
+        result = a-b
+        print("Subtraction : ",result)
+    elif option == 3:
+        result = a*b
+        print("Multiplication : ", result)
+    elif option == 4:
+        result = a/b
+        print("Division : ",result)
+    else:
+        print("Invalid Value")
 
 def end():
     print('Congratulations, have a nice day!')
@@ -40,6 +55,12 @@ def end():
     
 greet('Dude', '2023') 
 remind_name()
-guess_age()
+y = int(input("enter the year:"))
+m = int(input("enter the month:"))
+d = int(input("enter the day:"))
+guess_age(y,m,d)
 count()
+a = int(input("Enter first value: "))
+b = int(input("Enter second value: "))
+calculate(a,b)
 end()
