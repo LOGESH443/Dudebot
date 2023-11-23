@@ -1,3 +1,10 @@
+#DUDE BOT 
+
+import pyqrcode 
+import png 
+from pyqrcode import QRCode 
+    
+    
 def greet(bot_name, birth_year):
     print("Hello! My name is {0}.".format(bot_name))
     print("I was created in {0}.".format(birth_year))
@@ -47,14 +54,10 @@ def calculate(a,b):
         print("Invalid Value")
 
 def Qrcode():
-    import pyqrcode 
-    import png 
-    from pyqrcode import QRCode 
-    
-s = input("Enter your website url:")
-url = pyqrcode.create(s) 
-url.svg("myqr.svg", scale = 10) 
-url.png('myqr.png', scale = 8)
+    s = input("enter your website:")
+    url = pyqrcode.create(s) 
+    url.svg("myqr.svg", scale = 10) 
+    url.png('myqr.png', scale = 8)
 
 def end():
     print('Congratulations, have a nice day!')
@@ -69,33 +72,28 @@ remind_name()
 print("you want the help to find a age Press 1")
 choice1 = int(input())
 if(choice1 == 1):
-{
     y = int(input("enter the year:"))
     m = int(input("enter the month:"))
     d = int(input("enter the day:"))
     guess_age(y,m,d)
-}
+
 
 print("you want the help to count a numbers Press 1")
 choice2 = int(input())
 if(choice2 == 1):
-{
     count()
-}
+
 
 print("you want the help to solve Mathematical equation Press 1")
 choice3 = int(input())
 if(choice3 == 1):
-{
     a = int(input("Enter first value: "))
     b = int(input("Enter second value: "))
     calculate(a,b)
-}
 
 print("you are interested to generate Qr code for your website Press 1")
 choice4 = int(input())
 if(choice4 == 1):
-{
     Qrcode()
-}
+
 end()
