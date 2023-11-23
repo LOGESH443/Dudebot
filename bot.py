@@ -53,11 +53,11 @@ def calculate(a,b):
     else:
         print("Invalid Value")
 
-def Qrcode():
+"""def Qrcode():
     s = input("enter your website:")
     url = pyqrcode.create(s) 
     url.svg("myqr.svg", scale = 10) 
-    url.png('myqr.png', scale = 8)
+    url.png('myqr.png', scale = 8)"""
 
 def end():
     print('Congratulations, have a nice day!')
@@ -91,9 +91,9 @@ if(choice3 == 1):
     b = int(input("Enter second value: "))
     calculate(a,b)
 
-print("you are interested to generate Qr code for your website Press 1")
+""" print("you are interested to generate Qr code for your website Press 1")
 choice4 = int(input())
 if(choice4 == 1):
-    Qrcode()
+    Qrcode() """
 
 end()
