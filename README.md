@@ -22,5 +22,5 @@ Your assistant is old enough to learn how to count. And you are experienced enou
 **Stage #5: Arithmetic calculations** 
 Your assitant is to help in Arithmethic calculations.
 
-**Stage #5: QR code generator** 
+**Stage #6: QR code generator** 
 Your assitant is help to generate a Qr code for your website .
